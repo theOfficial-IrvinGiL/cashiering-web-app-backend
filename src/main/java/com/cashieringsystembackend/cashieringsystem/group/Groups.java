@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Entity
 @Data
-public class Group {
+public class Groups {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

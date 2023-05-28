@@ -1,12 +1,11 @@
 package com.cashieringsystembackend.cashieringsystem.users;
 
-import com.cashieringsystembackend.cashieringsystem.group.Group;
+import com.cashieringsystembackend.cashieringsystem.group.Groups;
 import com.cashieringsystembackend.cashieringsystem.role.Role;
 import lombok.Data;
 import lombok.NonNull;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Data
@@ -30,6 +29,6 @@ public class Users {
     @NonNull
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "group_id")
-    private Group group;
+    private Groups groups;
 
 }

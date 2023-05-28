@@ -1,0 +1,13 @@
+CREATE TABLE role(
+    id BIGINT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+
+    CONSTRAINT role_pkey PRIMARY KEY (id)
+);
+
+CREATE SEQUENCE role_sequence
+ INCREMENT 1
+ MINVALUE 1
+ START 1
+ CACHE 1;

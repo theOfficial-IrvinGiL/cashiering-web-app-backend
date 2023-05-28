@@ -1,0 +1,15 @@
+CREATE TABLE users(
+    id BIGINT NOT NULL,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role BIGINT NOT NULL,
+    groups BIGINT NOT NULL,
+
+    CONSTRAINT users_pkey PRIMARY KEY (id)
+);
+
+CREATE SEQUENCE users_sequence
+ INCREMENT 1
+ MINVALUE 1
+ START 1
+ CACHE 1;
